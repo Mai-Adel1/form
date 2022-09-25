@@ -1,0 +1,63 @@
+* {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+
+body{
+    margin:0;
+    background-color: rgb(237, 249, 251);
+    font-family: 'Kaushan Script', cursive;
+
+}
+
+div.cap{
+    text-align: center;
+    color: rgb(42, 104, 165);
+    font-size: 150%;
+}
+
+table{
+    margin: 5%;
+    margin-left: 10%;}
+
+table ,td,th{
+        border-collapse: collapse;
+        padding: 10px;
+        border-radius: 6px;
+            }
+
+tr{
+    font-size: 200%;
+}
+input{
+    font-size: 120%;
+    color: rgb(226, 43, 134);
+    border:1px solid blue ;
+}
+
+label{
+    font-weight: bold;
+    color: rgb(42, 104, 165);
+
+}
+
+div{
+    color: white;
+}
+.sub{
+    text-align: center;
+}
+.im{
+    display: inline-block;
+    text-align: center;
+    width: 90%;
+}
+.text{
+    color: blueviolet;
+    font-size: 150%;
+    margin: 30px;
+}
+hr{color:rgb(251, 1, 1);
+margin: 20px;}
+

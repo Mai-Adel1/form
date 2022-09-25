@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;900&family=Courgette&family=Slabo+27px&family=Viaoda+Libre&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;900&family=Courgette&family=Kaushan+Script&family=Slabo+27px&family=Viaoda+Libre&display=swap" rel="stylesheet">
+    <title>form test</title>
+    <!-- <script>
+        // the valiation of the country input
+            function myFunction(){
+            var myCon = document.getElementById('con').value;
+            //you should write letters 
+            let result = /[A-Za-z]/g;
+            if(result.test(myCon)){
+                document.getElementById('mess1').style.color='blue';
+                document.getElementById('mess1').innerHTML='valid';
+            }else{
+                document.getElementById('mess1').style.color='red';
+                document.getElementById('mess1').innerHTML='not valid';
+            }
+
+            }
+
+            function tell(){
+                da=document.getElementById('nam').value;
+                po = document.getElementById('pro').value;
+                on = document.getElementById('from').value;
+                to = document.getElementById('to').value;
+                document.getElementById('hi').innerHTML=`Thank You ${da} , We will transport your ${po} from ${on} to ${to}.`;
+            }
+
+            // the valiation of the phone number input
+            function phonevalidation(){
+                let phone = document.getElementById('phone').value;
+                let regex = /[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{2}/;
+                if(regex.test(phone)){
+                    document.getElementById('vali').innerHTML='✓✓';
+                }else{
+                    document.getElementById('vali').innerHTML='please enter the phone number in the correct way';
+                }
+                
+            }
+    </script> -->
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    
+    <div class="im"><img width="35%" src="download.jfif" alt="welcome"></div>
+    <div class="text"><br><br>My form is about customer service .
+        our service is about transport any prouduct you want from the city you want transpose the prouducts from to another city you want.
+        in the form iam set the date and also the time to you to choose the time and the date you want to service.</div><hr>
+    <form>
+        
+        <table>
+            <tr>
+                <td><div class="cap" >customer service form</div></td>
+            </tr>
+            <tr>
+                <td> <label for="nam">Name</label></td>
+                <td><input id="nam" name="name" type="text" required></td></tr>
+
+            <tr>
+                    <td> <label for="">gender</label></td>
+                    <td><input id="mal" name="gender" type="radio" value="male">
+                    <label for="mal">male</label></td>
+                    <td><input id="fml" name="gender" type="radio" value="female">
+                    <label for="fml">Female</label></td></tr>
+    
+            <tr>
+                <td><label for="con">country</label></td>
+                <td><input type="text" id="con" name="country" onblur="myFunction()"></td>
+                <td><span id="mess1"></span></td>
+            </tr>
+
+            <tr>
+                <td><label for="city" >City</label></td>
+                <td><input type="text" name="city" id="city"></td></tr>
+
+            <tr>
+                <td><label for="em">E-mail</label></td>
+                <td><input type="email" id="em" name="email"></td>
+            </tr>
+
+
+            <tr>
+                <tr>
+                    <td><label for="phone" >Phone Number</label></td>
+                    <td><input type="text" name="phone" id="phone" placeholder="xxx-xxx-xxx-xx" onblur="phonevalidation()"></td>
+                    <td><span id="vali"></span></td>
+                </tr>
+    
+            <tr>
+                <td><label for="pro">Product</label></td>
+                <td><input type="text" id="pro" name="Product"></td>
+            </tr>
+            <!-- the city where we will tranport product from -->
+            <tr>
+                <td><label for="from">From</label></td>
+                <td><input type="text" id="from" name="from"></td>
+            </tr>
+
+            <!-- the city where we will tranport product to -->
+            <tr>
+                <td><label for="to">To</label></td>
+                <td><input type="text" id="to" name="to"></td>
+            </tr>
+            <!-- date at which we will come to make a service -->
+            <tr>
+                <td><label for="dt">Date</label></td>
+                <td><input type="date" id="dt" name="date"></td>
+            </tr>
+            <!-- time at which we will come to make a service -->
+            <tr>
+                <td><label for="ti">Time</label></td>
+                <td><input type="time" id="ti" name="time"></td>
+            </tr>
+
+            <tr>
+                <td><div class="sub" colspan="2" style="background-color: pink; display: inline-block; padding: 9px; border-radius:7px; border: 1px solid plum;" onclick="tell()">Submit</div></td>
+            </tr>
+            <tr><td><p class="sub" id="hi" style="font-size: 150%; color:rgb(13, 106, 218)"></p></td></tr>
+
+        </table>
+
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
