@@ -25,6 +25,7 @@ function phonevalidation(){
     let phone = document.getElementById('phone').value;
     let regex = /[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{2}/;
     if(regex.test(phone)){
+        document.getElementById('vali').style.color='green';
         document.getElementById('vali').innerHTML='✓✓';
     }else{
         document.getElementById('vali').innerHTML='please enter the phe number in the correct way';
